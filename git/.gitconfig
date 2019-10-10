@@ -1,0 +1,23 @@
+[user]
+    email = jmmadge@gmail.com
+    name = Jim Madge
+    signingKey = 3957DB7332A7B0677A5C80CD8C5A1290C5A22B5E
+[core]
+    editor = vim
+[merge]
+    tool = vimdiff
+[color]
+    ui = true
+[alias]
+    tree = log --graph --decorate=short --all
+        #tree = log --graph --pretty=oneline --decorate --all
+[alias]
+    stat = diff --stat
+[alias]
+    tracked = ls-tree -r HEAD --name-only
+[alias]
+    sb = status -sb
+[push]
+    default = simple
+[commit]
+    gpgSign = True
