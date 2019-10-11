@@ -20,11 +20,14 @@ setopt HIST_IGNORE_SPACE
 # Completion
 zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
-compinit
+compinit -u
 
 # Set editor
 export EDITOR=vim
 export VISUAL=$EDITOR
+
+# Set GPG tty
+export GPG_TTY=$(tty)
 
 # Add ruby path
 if [ -f /usr/bin/ruby ]; then
@@ -32,13 +35,22 @@ if [ -f /usr/bin/ruby ]; then
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
+# Add homebrew path
+export PATH="/usr/local/bin:$PATH"
+
+# Specify cask install location
+export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
+
+# Add texlive path
+export PATH="$PATH:/Library/TeX/texbin"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
 fi
 
 # Solarized dir colors
-eval `dircolors ~/.dir_colors`
+export LSCOLORS=exfxfeaeBxxehehbadacea
 
 # Autosuggest settings
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10,underline"
@@ -56,13 +68,14 @@ export FZF_DEFAULT_OPTS='
 
 # Aliases
 if [ -x "$(command -v exa)" ]; then
-    LS_COMMAND='exa'
+    alias ls='exa --color=auto --group-directories-first'
+    alias ll='exa -l'
+    alias la='exa -a'
 else
-    LS_COMMAND='ls'
+    alias ll='ls -l'
+    alias la='ls -A'
+    alias ls='ls -G'
 fi
-alias ls='${LS_COMMAND} --color=auto --group-directories-first'
-alias ll='${LS_COMMAND} -l'
-alias la='${LS_COMMAND} -a'
 
 function pipgrade() {
     pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
