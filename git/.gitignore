@@ -2,3 +2,5 @@
 .*.swp
 # Python virtual environments
 venv
+# Mac OS directory information
+.DS_Store
