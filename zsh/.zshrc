@@ -20,11 +20,14 @@ setopt HIST_IGNORE_SPACE
 # Completion
 zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
-compinit
+compinit -u
 
 # Set editor
 export EDITOR=vim
 export VISUAL=$EDITOR
+
+# Set GPG tty
+export GPG_TTY=$(tty)
 
 # Add ruby path
 if [ -f /usr/bin/ruby ]; then
@@ -32,13 +35,22 @@ if [ -f /usr/bin/ruby ]; then
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
+# Add homebrew path
+export PATH="/usr/local/bin:$PATH"
+
+# Specify cask install location
+export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
+
+# Add texlive path
+export PATH="$PATH:/Library/TeX/texbin"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
 fi
 
 # Solarized dir colors
-eval `dircolors ~/.dir_colors`
+export LSCOLORS=exfxfeaeBxxehehbadacea
 
 # Autosuggest settings
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10,underline"
