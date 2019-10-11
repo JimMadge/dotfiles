@@ -38,9 +38,6 @@ fi
 # Add homebrew path
 export PATH="/usr/local/bin:$PATH"
 
-# Specify cask install location
-export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
-
 # Add texlive path
 export PATH="$PATH:/Library/TeX/texbin"
 
