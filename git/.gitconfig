@@ -10,12 +10,8 @@
     ui = true
 [alias]
     tree = log --graph --decorate=short --all
-        #tree = log --graph --pretty=oneline --decorate --all
-[alias]
     stat = diff --stat
-[alias]
     tracked = ls-tree -r HEAD --name-only
-[alias]
     sb = status -sb
 [push]
     default = simple
