@@ -1,7 +1,7 @@
 [user]
     email = jmmadge@gmail.com
     name = Jim Madge
-    signingKey = 3957DB7332A7B0677A5C80CD8C5A1290C5A22B5E
+    ; signingKey =
 [core]
     editor = vim
 [merge]
