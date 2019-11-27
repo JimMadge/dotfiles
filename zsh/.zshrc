@@ -46,7 +46,7 @@ alias ls='ls --color=auto --group-directories-first'
 
 alias cgrep='grep -n --color'
 
-alias news='archnews -w 72 -u -r'
+alias news='archnews -w 72 -u'
 
 function dusort() {
 du -shc --time .??* * | sort -h
