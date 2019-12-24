@@ -58,26 +58,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
+let g:syntastic_julia_checkers = ["lint"]
 
 " Easy align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
-"fallback status bar
-set statusline=
-set statusline +=%1*\[%n]\ %*            "buffer number
-set statusline +=%2*%{&ff}\ %*            "file format (unix/dos...)
-set statusline +=%3*%y\ %*                "file type
-set statusline +=%4*%<%F%*            "full path
-set statusline +=%1*%m%r%w%*                "modified/read only flag
-set statusline +=%2*\%=\[%{&spelllang},\%{SpellOn()}]\ %*
-set statusline +=%5*%l%*             "current line
-set statusline +=%6*/%L%*%4*,%*               "total lines
-set statusline +=%5*%v\%*             "virtual column number
-"set statusline +=%2*\ (%p%%)\%*       "file %
-set statusline +=%1*\ %P\%*       "file % with top/bottom
-"set statusline +=%2*0x%04B\ %*          "character under cursor
-set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
@@ -104,15 +89,3 @@ noremap <F12> <Esc>:syntax sync fromstart<CR>
 " Use ]q and [q to seek through quickfix list, useful with Syntastic
 noremap ]q :lnext<CR>
 noremap [q :lprevious<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
-" Functions
-""""""""""""""""""""""""""""""""""""""""""""""""""
-"spell on function
-function! SpellOn()
-  if &spell
-    return 'on'
-  else
-    return'off'
-  end if
-endfunction
