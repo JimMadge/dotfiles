@@ -72,7 +72,6 @@ set expandtab "replace tabs with spaces
 set shiftwidth=4 "width of indenting
 set tabstop=4 "tab width in spaces
 set autoindent "keeps indentation after newline
-set smartindent "reduces indentation at the end of a block
 
 set foldlevelstart=20 "opens folds up to level 20 when opening a file
 
