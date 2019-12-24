@@ -5,7 +5,6 @@ set tabstop=2
 set shiftwidth=2
 
 set autoindent
-set smartindent
 
 "turn on spell check
 set spell spelllang=en_gb

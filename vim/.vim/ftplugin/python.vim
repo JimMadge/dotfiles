@@ -1,5 +1,4 @@
 set autoindent
-set smartindent
 
 set expandtab
 set shiftwidth=4
