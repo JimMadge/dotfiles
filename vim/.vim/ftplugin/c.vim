@@ -1,9 +1,9 @@
-set autoindent
-set nosmartindent
-set cindent
+setlocal autoindent
+setlocal nosmartindent
+setlocal cindent
 
-set expandtab
-set shiftwidth=4
-set tabstop=4
+setlocal expandtab
+setlocal shiftwidth=4
+setlocal tabstop=4
 
-set foldmethod=syntax
+setlocal foldmethod=syntax

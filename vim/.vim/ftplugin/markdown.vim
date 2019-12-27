@@ -1,7 +1,7 @@
-set tw=80
+setlocal tw=80
 
-set expandtab
-set shiftwidth=2
-set tabstop=2
+setlocal expandtab
+setlocal shiftwidth=2
+setlocal tabstop=2
 
-set spell spelllang=en_gb
+setlocal spell spelllang=en_gb

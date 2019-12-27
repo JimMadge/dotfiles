@@ -1,13 +1,13 @@
-set tw=80
+setlocal tw=80
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
+setlocal expandtab
+setlocal tabstop=2
+setlocal shiftwidth=2
 
-set autoindent
+setlocal autoindent
 
 "turn on spell check
-set spell spelllang=en_gb
+setlocal spell spelllang=en_gb
 
 "vim-surround mappings for environments and commands
 "(i.e. yse ysc)
