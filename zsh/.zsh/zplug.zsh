@@ -10,7 +10,7 @@ source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # Plugins
-zplug 'bhilburn/powerlevel9k', as:theme
+zplug 'romkatv/powerlevel10k', as:theme, depth:1
 zplug 'zdharma/history-search-multi-word'
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
