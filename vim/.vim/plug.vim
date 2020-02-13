@@ -7,10 +7,12 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug '/usr/bin/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf.vim'
 Plug 'lervag/vimtex'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
