@@ -7,7 +7,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug '/usr/bin/fzf'
+Plug '/usr/local/opt/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'cespare/vim-toml'
