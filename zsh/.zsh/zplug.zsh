@@ -15,8 +15,8 @@ zplug 'wfxr/forgit'
 zplug 'zdharma/history-search-multi-word'
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
-if [[ -d /usr/share/fzf ]]; then
-    zplug '/usr/share/fzf', from:local, use:"*.zsh"
+if [[ -d /usr/local/opt/fzf/shell ]]; then
+    zplug '/usr/local/opt/fzf/shell', from:local, use:"*.zsh"
 fi
 
 # Install plugins if there are plugins that have not been installed
