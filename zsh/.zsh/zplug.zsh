@@ -14,7 +14,9 @@ zplug 'romkatv/powerlevel10k', as:theme, depth:1
 zplug 'zdharma/history-search-multi-word'
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
-zplug '/usr/share/fzf', from:local, use:"*.zsh"
+if [[ -d /usr/share/fzf ]]; then
+    zplug '/usr/share/fzf', from:local, use:"*.zsh"
+fi
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
