@@ -10,7 +10,7 @@ source ~/.vim/plug.vim
 set t_Co=256
 
 set wildmenu "suggestions for autocompletion
-set wildmode=list:longest "list all matches, complete until the longest common string
+set wildmode=longest:full "list all matches, complete until the longest common string
 
 set ruler "Permanent position display at the bottom
 set number "Show line numbers
