@@ -37,7 +37,6 @@ set autoread "automatically update files (can be undone with u)
 
 let g:tex_flavor="latex"
 
-filetype plugin on
 filetype plugin indent on
 
 syntax enable "syntax highlighting
