@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # History file
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -24,8 +31,10 @@ if [ -f /usr/bin/ruby ]; then
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
-# Powerlevel9k theme settings
-source ~/.zsh/powerlevel9k.zsh
+# Powerlevel10k theme settings
+if [ -f ~/.zsh/p10k.zsh ]; then
+    source ~/.zsh/p10k.zsh
+fi
 
 # Solarized dir colors
 eval `dircolors ~/.dir_colors`
