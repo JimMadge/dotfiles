@@ -425,6 +425,13 @@
   # If set to false, hide haskell version if it's the same as in the implicit global project.
   typeset -g POWERLEVEL9K_HASKELL_STACK_ALWAYS_SHOW=true
 
+  # Transient prompt.
+  typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
+
+  # Instant prompt mode. Verbose prints warnings when detecting console output
+  # during initialisation.
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+
   # Hot reload allows you to change POWERLEVEL9K options after Powerlevel10k
   # has been initialized.  Can slow down prompt by 1-2 milliseconds.
   typeset -g POWERLEVEL9K_DISABLE_HOT_RELOAD=true
