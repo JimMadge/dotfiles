@@ -104,13 +104,13 @@
   typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
 
   # Ruler, horizontal line between prompts.
-  # This is best an an alternative to the prompt gap character below
+  # This is an alternative to the prompt gap character below
   typeset -g POWERLEVEL9K_SHOW_RULER=false
-  typeset -g POWERLEVEL9K_RULER_CHAR='─'
+  typeset -g POWERLEVEL9K_RULER_CHAR='─' #'·'
   typeset -g POWERLEVEL9K_RULER_FOREGROUND=10
 
   # Prompt gap character
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR='─'
+  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR='─' #'·'
   if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
     typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=10
     typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=' '
