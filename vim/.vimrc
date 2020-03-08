@@ -4,7 +4,7 @@
 source ~/.vim/plug.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" User Interface
+" Vim configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "256 colours
 set t_Co=256
@@ -31,16 +31,22 @@ set splitright
 set splitbelow
 
 set list "indicate whitespace and off screen characters
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+ "list character settings
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 set autoread "automatically update files (can be undone with u)
 
-let g:tex_flavor="latex"
-
+" Enable filetype detection, filetype plugin loading and filetype indent
+" loading
 filetype plugin indent on
 
 syntax enable "syntax highlighting
 
+let g:tex_flavor="latex"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin configuration
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Solarized
 set background=dark
 colorscheme solarized
 
@@ -79,6 +85,8 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" vimtex
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
