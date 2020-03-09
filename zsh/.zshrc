@@ -68,3 +68,7 @@ alias news='archnews -w 72 -u'
 function dusort() {
 du -shc --time .??* * | sort -h
 }
+
+function pipgrade() {
+    pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
+}
