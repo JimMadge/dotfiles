@@ -91,6 +91,10 @@ let g:fzf_colors = {
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment']
     \}
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :GFiles<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fm :Marks<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
