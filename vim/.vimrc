@@ -1,3 +1,5 @@
+set nocompatible "Reduce compatibility with vi
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Load vim-plug configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""
