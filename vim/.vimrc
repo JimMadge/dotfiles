@@ -17,6 +17,8 @@ set wildmode=longest:full "list all matches, complete until the longest common s
 set ruler "Permanent position display at the bottom
 set number "Show line numbers
 
+set showcmd "Show command on the bottom line
+
 set hlsearch "highlight search results
 set incsearch "begin searching before pressing enter
 
