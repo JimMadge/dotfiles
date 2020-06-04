@@ -9,7 +9,7 @@
 [color]
     ui = true
 [alias]
-    tree = log --graph --decorate=short --all
+    tree = log --graph
     stat = diff --stat
     tracked = ls-tree -r HEAD --name-only
     sb = status -sb
