@@ -15,5 +15,7 @@
     sb = status -sb
 [push]
     default = simple
+[pull]
+    ff = only
 [commit]
     gpgSign = True
