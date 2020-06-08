@@ -111,11 +111,13 @@ set foldlevelstart=20 "opens folds up to level 20 when opening a file
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Commands and bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""
-":C will clear search
+" Make Y consistent with C, D, etc.
+map Y y$
+
+" Clear search
 command C let @/ = ""
 
-"bind F12 to sync from start
-"helps fix syntax highlighting
+" Bind F12 to sync from start, helps fix syntax highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 
 " Use ]q and [q to seek through quickfix list, useful with Syntastic
