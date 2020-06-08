@@ -8,9 +8,6 @@ source ~/.vim/plug.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Vim configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"256 colours
-set t_Co=256
-
 set wildmenu "suggestions for autocompletion
 set wildmode=longest:full "list all matches, complete until the longest common string
 
