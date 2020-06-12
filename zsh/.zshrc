@@ -41,6 +41,9 @@ export PATH="/usr/local/bin:$PATH"
 # Add texlive path
 export PATH="$PATH:/Library/TeX/texbin"
 
+# Add Python 3.8 path
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
