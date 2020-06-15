@@ -1,3 +1,6 @@
+# zplug
+source ~/.zsh/zplug.zsh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -52,9 +55,6 @@ export FZF_DEFAULT_OPTS='
   --color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
   --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
 '
-
-# zplug
-source ~/.zsh/zplug.zsh
 
 # Aliases
 alias ll='ls -l'
