@@ -1,3 +1,6 @@
+# vi keys
+bindkey -v
+
 # zplug
 source ~/.zsh/zplug.zsh
 
@@ -12,9 +15,6 @@ fi
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-
-# vi keys
-bindkey -v
 
 # Completion
 zstyle :compinstall filename '${HOME}/.zshrc'
