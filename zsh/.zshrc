@@ -21,9 +21,6 @@ zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
 compinit
 
-# Declare terminal colour support (required by tmux)
-export TERM='xterm-256color'
-
 # Set editor
 export EDITOR=vim
 export VISUAL=$EDITOR
