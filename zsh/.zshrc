@@ -69,3 +69,7 @@ du -shc --time .??* * | sort -h
 function pipgrade() {
     pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
 }
+
+function pacfzf() {
+    pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
+}
