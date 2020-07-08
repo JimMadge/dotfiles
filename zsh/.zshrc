@@ -44,6 +44,12 @@ export PATH="$PATH:/Library/TeX/texbin"
 # Add Python 3.8 path
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
+# Add GNU core utils path
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+
+# Add GNU sed to path
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
