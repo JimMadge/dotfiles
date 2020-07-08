@@ -44,6 +44,12 @@ export PATH="$PATH:/Library/TeX/texbin"
 # Add Python 3.8 path
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
+# Add GNU core utils path
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+
+# Add GNU sed to path
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
@@ -68,14 +74,13 @@ export FZF_DEFAULT_OPTS='
 
 # Aliases
 if [ -x "$(command -v exa)" ]; then
-    alias ls='exa --color=auto --group-directories-first'
-    alias ll='exa -l'
-    alias la='exa -a'
+    LS_COMMAND='exa'
 else
-    alias ll='ls -l'
-    alias la='ls -A'
-    alias ls='ls -G'
+    LS_COMMAND='ls'
 fi
+alias ls='${LS_COMMAND} --color=auto --group-directories-first'
+alias ll='${LS_COMMAND} -l'
+alias la='${LS_COMMAND} -a'
 
 function pipgrade() {
     pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
