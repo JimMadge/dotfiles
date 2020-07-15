@@ -42,8 +42,6 @@ filetype plugin indent on
 
 syntax enable "syntax highlighting
 
-let g:tex_flavor="latex"
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -96,6 +94,9 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fg :GFiles<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fm :Marks<CR>
+
+" vimtex
+let g:tex_flavor="latex"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
