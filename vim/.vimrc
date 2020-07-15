@@ -103,6 +103,7 @@ let g:tex_flavor="latex"
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start
 set expandtab "replace tabs with spaces
+set smarttab "<BS> will delete 'shiftwidth' spaces at the start of a line
 set shiftwidth=4 "width of indenting
 set tabstop=4 "tab width in spaces
 set autoindent "keeps indentation after newline
