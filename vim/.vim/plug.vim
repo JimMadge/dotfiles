@@ -11,12 +11,12 @@ Plug '/usr/bin/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'JuliaEditorSupport/julia-vim'
+Plug 'JuliaEditorSupport/julia-vim', { 'for': 'julia' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf.vim'
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'petrushka/vim-opencl'
-Plug 'pprovost/vim-ps1'
+Plug 'pprovost/vim-ps1', { 'for': 'ps1' }
 Plug 'tmhedberg/simpylfold', { 'for': 'python' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
