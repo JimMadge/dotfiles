@@ -9,6 +9,7 @@
     gpgSign = True
 [core]
     editor = vim
+    excludesfile = "~/.gitignore"
 [merge]
     tool = vimdiff
 [pull]
