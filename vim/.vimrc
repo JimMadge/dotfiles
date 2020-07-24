@@ -36,6 +36,9 @@ set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 set autoread "automatically update files (can be undone with u)
 
+set spelllang=en_gb
+set spell
+
 " Enable filetype detection, filetype plugin loading and filetype indent
 " loading
 filetype plugin indent on
@@ -48,9 +51,6 @@ syntax enable "syntax highlighting
 " Solarized
 set background=dark
 colorscheme solarized
-
-" Underline spelling mistakes (redefined in solarized package)
-highlight SpellBad term=underline cterm=underline gui=undercurl guisp=Red
 
 " Vim airline
 let g:airline_theme='solarized'
