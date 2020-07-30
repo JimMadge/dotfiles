@@ -120,7 +120,8 @@ set foldlevelstart=20 "opens folds up to level 20 when opening a file
 map Y y$
 
 " Clear search
-command C let @/ = ""
+noremap <C-L> :let @/=""<CR>
+inoremap <C-L> <Esc>:let @/=""<CR>a
 
 " Bind F12 to sync from start, helps fix syntax highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
