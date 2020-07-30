@@ -32,7 +32,7 @@ set splitright
 set splitbelow
 
 set list "indicate whitespace and off screen characters
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:+,eol:↵
 
 set autoread "automatically update files (can be undone with u)
 
@@ -63,6 +63,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
 let g:syntastic_julia_checkers = ["lint"]
+let g:syntastic_yaml_checkers = ["yamllint"]
 
 " Easy align
 xmap ga <Plug>(EasyAlign)
