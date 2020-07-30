@@ -39,6 +39,8 @@ set autoread "automatically update files (can be undone with u)
 set spelllang=en_gb
 set spell
 
+set formatoptions+=j "remove comment character when joining comment lines
+
 " Enable filetype detection, filetype plugin loading and filetype indent
 " loading
 filetype plugin indent on
