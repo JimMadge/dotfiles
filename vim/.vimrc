@@ -54,6 +54,9 @@ syntax enable "syntax highlighting
 set background=dark
 colorscheme solarized
 
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE  ctermfg=NONE guibg=NONE guifg=NONE
+
 " Vim airline
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
