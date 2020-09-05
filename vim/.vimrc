@@ -53,9 +53,10 @@ syntax enable "syntax highlighting
 " Solarized
 set background=dark
 colorscheme solarized
-" let g:solarized_termtrans=1 "allow transparency, doesn't work with my alalacritty configuration
+" let g:solarized_termtrans=1 "allow transparency, doesn't work with my alacritty configuration
 highlight! Normal ctermbg=NONE guibg=NONE "fallback transparency
 highlight! NonText ctermbg=NONE  ctermfg=NONE guibg=NONE guifg=NONE
+highlight SpellBad cterm=underline
 let g:solarized_visibility='low' "Make list characters less visible
 
 " Vim airline
