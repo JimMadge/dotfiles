@@ -54,9 +54,14 @@ export FZF_DEFAULT_OPTS='
 '
 
 # Aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias ls='ls --color=auto --group-directories-first'
+if [ -x "$(command -v exa)" ]; then
+    LS_COMMAND='exa'
+else
+    LS_COMMAND='ls'
+fi
+alias ls='${LS_COMMAND} --color=auto --group-directories-first'
+alias ll='${LS_COMMAND} -l'
+alias la='${LS_COMMAND} -a'
 
 alias cgrep='grep -n --color'
 
