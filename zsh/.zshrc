@@ -41,9 +41,6 @@ export PATH="/usr/local/bin:$PATH"
 # Add texlive path
 export PATH="$PATH:/Library/TeX/texbin"
 
-# Add Python 3.8 path
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-
 # Add GNU core utils path
 export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 
