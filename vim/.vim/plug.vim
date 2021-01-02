@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/bin/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'cespare/vim-toml'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'hashivim/vim-terraform'
 Plug 'JuliaEditorSupport/julia-vim'
