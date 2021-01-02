@@ -69,6 +69,10 @@ export FZF_DEFAULT_OPTS='
   --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
 '
 
+# terraform autocompletion
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
 # Aliases
 if [ -x "$(command -v exa)" ]; then
     LS_COMMAND='exa'
