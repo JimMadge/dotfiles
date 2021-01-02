@@ -32,7 +32,7 @@ set splitright
 set splitbelow
 
 set list "indicate whitespace and off screen characters
-set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:+,eol:↵
+set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:+
 
 set autoread "automatically update files (can be undone with u)
 
