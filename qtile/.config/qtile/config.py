@@ -166,7 +166,7 @@ screens = [
                 widget.ThermalSensor(
                     foreground=colours["fg_normal"],
                     forground_alert=colours["red"],
-                    tag_sensor="Composite"
+                    tag_sensor="Tdie"
                 ),
                 widget.Sep(),
                 widget.TextBox(

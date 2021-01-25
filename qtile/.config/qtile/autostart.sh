@@ -10,3 +10,4 @@ function run {
 run picom
 run udiskie --automount --smart-tray --notify
 run redshift-gtk -l geoclue2
+run nextcloud
