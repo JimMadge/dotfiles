@@ -129,6 +129,9 @@ map Y y$
 noremap <C-L> :let @/=""<CR>
 inoremap <C-L> <Esc>:let @/=""<CR>a
 
+" Pate toggle
+set pastetoggle=<C-K>
+
 " Bind F12 to sync from start, helps fix syntax highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 
