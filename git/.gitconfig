@@ -19,6 +19,6 @@
 [push]
     default = simple
 [user]
-    email = jmmadge@gmail.com
+    email = jim@jmadge.com
     name = Jim Madge
     ; signingKey =
