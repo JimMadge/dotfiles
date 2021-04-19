@@ -69,7 +69,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
-let g:syntastic_ansible_checkers = []
 let g:syntastic_julia_checkers = ["lint"]
 let g:syntastic_python_checkers = ["flake8", "python3"]
 let g:syntastic_yaml_checkers = ["yamllint"]
