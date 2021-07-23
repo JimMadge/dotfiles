@@ -3,6 +3,7 @@
     stat = diff --stat
     tracked = ls-tree -r HEAD --name-only
     sb = status -sb
+    root = rev-parse --show-toplevel
 [color]
     ui = true
 [commit]
