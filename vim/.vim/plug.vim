@@ -21,6 +21,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'petrushka/vim-opencl'
 Plug 'pprovost/vim-ps1'
 Plug 'rust-lang/rust.vim'
+Plug 'singularityware/singularity.lang', {'rtp': 'vim'}
 Plug 'tmhedberg/simpylfold'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
