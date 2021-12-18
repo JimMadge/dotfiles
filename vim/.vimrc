@@ -108,6 +108,12 @@ nnoremap <leader>fm :Marks<CR>
 " vimtex
 let g:tex_flavor="latex"
 
+" indent lines
+let g:indentLine_enabled = 1
+let g:indentLine_char = '┊'
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+nnoremap <leader>ig :IndentLinesToggle<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""

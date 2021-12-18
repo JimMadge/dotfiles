@@ -31,5 +31,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'yggdroot/indentline'
 
 call plug#end()
