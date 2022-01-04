@@ -37,6 +37,7 @@ fi
 
 # Add homebrew path
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 # Add texlive path
 export PATH="$PATH:/Library/TeX/texbin"
