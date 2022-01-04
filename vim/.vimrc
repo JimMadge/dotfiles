@@ -73,6 +73,7 @@ let g:syntastic_julia_checkers = ["lint"]
 let g:syntastic_python_checkers = ["flake8", "python3"]
 let g:syntastic_yaml_checkers = ["yamllint"]
 let g:syntastic_ansible_checkers = [""]
+let g:syntastic_markdown_mdl_args = ["--ignore-front-matter"]
 
 " Easy align
 xmap ga <Plug>(EasyAlign)
