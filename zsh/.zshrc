@@ -67,7 +67,7 @@ alias la='${LS_COMMAND} -a'
 alias cgrep='grep -n --color'
 
 function dusort() {
-    du -ah --max-depth=1 --time | sort -h | sed 's|\(.*\)\./\(.*\)|\1\2|g'
+    du -ah --max-depth=1 --time $1 | sort -h | sed 's|\(.*\)\./\(.*\)|\1\2|g'
 }
 
 function pipgrade() {
