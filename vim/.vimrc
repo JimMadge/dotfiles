@@ -142,7 +142,3 @@ set pastetoggle=<F2>
 
 " Bind F12 to sync from start, helps fix syntax highlighting
 noremap <F12> <Esc>:syntax sync fromstart<CR>
-
-" Use ]q and [q to seek through quickfix list, useful with Syntastic
-noremap ]q :lnext<CR>
-noremap [q :lprevious<CR>
