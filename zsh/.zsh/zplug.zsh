@@ -12,6 +12,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # Plugins
 zplug 'romkatv/powerlevel10k', as:theme, depth:1
 zplug 'wfxr/forgit'
+zplug 'zdharma-continuum/fast-syntax-highlighting'
 zplug 'zdharma-continuum/history-search-multi-word'
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
