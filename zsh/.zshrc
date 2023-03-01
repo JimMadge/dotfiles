@@ -36,17 +36,16 @@ if [ -f /usr/bin/ruby ]; then
 fi
 
 # Add homebrew path
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+export Path="/opt/homebrew/bin:$PATH"
 
-# Add texlive path
-export PATH="$PATH:/Library/TeX/texbin"
+# Add homebrew completions path
+fpath=(/opt/homebrew/share/zsh/site-functions/ $fpath)
 
 # Add GNU core utils path
-export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 # Add GNU sed to path
-export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
@@ -69,10 +68,6 @@ export FZF_DEFAULT_OPTS='
   --color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
   --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
 '
-
-# terraform autocompletion
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
 
 # Aliases
 if [ -x "$(command -v exa)" ]; then
