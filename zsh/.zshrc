@@ -64,8 +64,6 @@ alias ls='${LS_COMMAND} --color=auto --group-directories-first'
 alias ll='${LS_COMMAND} -l'
 alias la='${LS_COMMAND} -a'
 
-alias cgrep='grep -n --color'
-
 function pipgrade() {
     pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
 }
