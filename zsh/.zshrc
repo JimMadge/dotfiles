@@ -66,10 +66,6 @@ alias la='${LS_COMMAND} -a'
 
 alias cgrep='grep -n --color'
 
-function dusort() {
-    du -ah --max-depth=1 --time $1 | sort -h | sed 's|\(.*\)\./\(.*\)|\1\2|g'
-}
-
 function pipgrade() {
     pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
 }
