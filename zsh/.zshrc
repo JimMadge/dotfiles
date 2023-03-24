@@ -17,6 +17,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt HIST_IGNORE_SPACE
 
+# Add homebrew completions path
+fpath=(/opt/homebrew/share/zsh/site-functions/ $fpath)
+
 # Completion
 zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
@@ -37,9 +40,6 @@ fi
 
 # Add homebrew path
 export Path="/opt/homebrew/bin:$PATH"
-
-# Add homebrew completions path
-fpath=(/opt/homebrew/share/zsh/site-functions/ $fpath)
 
 # Add GNU core utils path
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
