@@ -33,7 +33,8 @@ export VISUAL=$EDITOR
 export GPG_TTY=$(tty)
 
 # Add ruby path
-if [ -f /usr/bin/ruby ]; then
+if [ -f /opt/homebrew/opt/ruby/bin/ruby ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
   export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
   export PATH="$PATH:$GEM_HOME/bin"
 fi
