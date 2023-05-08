@@ -113,6 +113,8 @@ let g:tex_flavor="latex"
 let g:indentLine_enabled = 1
 let g:indentLine_char = '┊'
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:vim_json_conceal=0 "disable conceal for JSON
+let g:markdown_syntax_conceal=0 "disable conceal for Markdown
 nnoremap <leader>ig :IndentLinesToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
