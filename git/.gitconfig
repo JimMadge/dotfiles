@@ -4,6 +4,10 @@
     tracked = ls-tree -r HEAD --name-only
     sb = status -sb
     root = rev-parse --show-toplevel
+    a = add
+    c = commit
+    ca = commit -a
+    caa = commit -a --amend
 [color]
     ui = true
 [commit]
