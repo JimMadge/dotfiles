@@ -80,8 +80,8 @@ export FZF_DEFAULT_OPTS='
 '
 
 # Aliases
-if [ -x "$(command -v exa)" ]; then
-    LS_COMMAND='exa'
+if [ -x "$(command -v eza)" ]; then
+    LS_COMMAND='eza'
 else
     LS_COMMAND='ls'
 fi
