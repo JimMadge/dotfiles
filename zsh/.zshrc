@@ -40,7 +40,7 @@ if [ -f /opt/homebrew/opt/ruby/bin/ruby ]; then
 fi
 
 # Add homebrew path
-export Path="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Add GNU core utils path
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
