@@ -75,7 +75,7 @@ let g:syntastic_python_checkers = ["flake8", "isort", "python"]
 let g:syntastic_python_flake8_args = ["--extend-ignore=E501"] " Ignore line length
 let g:syntastic_yaml_checkers = ["yamllint"]
 let g:syntastic_ansible_checkers = [""]
-let g:syntastic_markdown_mdl_args = ["--ignore-front-matter"]
+let g:syntastic_markdown_mdl_args = ["--ignore-front-matter", "--rules", "~MD013,~MD007"]
 
 " Easy align
 xmap ga <Plug>(EasyAlign)
