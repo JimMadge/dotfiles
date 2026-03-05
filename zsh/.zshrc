@@ -48,6 +48,9 @@ export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 # Add GNU sed to path
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
+# Add local bin to path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
