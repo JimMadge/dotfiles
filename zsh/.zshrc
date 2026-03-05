@@ -51,6 +51,12 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 # Add local bin to path
 export PATH="$HOME/.local/bin:$PATH"
 
+# kubectl configs
+export KUBECONFIG=$HOME/.kube/config
+for conf in ~/.kube/*.conf; do
+    export KUBECONFIG=$KUBECONFIG:$conf
+done
+
 # Powerlevel10k theme settings
 if [ -f ~/.zsh/p10k.zsh ]; then
     source ~/.zsh/p10k.zsh
