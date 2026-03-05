@@ -131,8 +131,8 @@ nnoremap [T :tabfirst<CR>
 set backspace=indent,eol,start
 set expandtab "replace tabs with spaces
 set smarttab "<BS> will delete 'shiftwidth' spaces at the start of a line
-set shiftwidth=4 "width of indenting
-set tabstop=4 "tab width in spaces
+set shiftwidth=2 "width of indenting
+set tabstop=2 "tab width in spaces
 set autoindent "keeps indentation after newline
 
 set foldlevelstart=20 "opens folds up to level 20 when opening a file
