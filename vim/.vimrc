@@ -118,6 +118,12 @@ let g:vim_json_conceal=0 "disable conceal for JSON
 let g:markdown_syntax_conceal=0 "disable conceal for Markdown
 nnoremap <leader>ig :IndentLinesToggle<CR>
 
+" unimpaired
+nnoremap ]t :tabnext<CR>
+nnoremap [t :tabprev<CR>
+nnoremap ]T :tablast<CR>
+nnoremap [T :tabfirst<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""
