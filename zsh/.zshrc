@@ -65,10 +65,6 @@ alias ll='${LS_COMMAND} -l'
 alias la='${LS_COMMAND} -a'
 alias g="git"
 
-function pipgrade() {
-    pip install --upgrade $(pip list --outdated --format=freeze | cut -f 1 -d '=')
-}
-
 function pacfzf() {
     pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
 }
