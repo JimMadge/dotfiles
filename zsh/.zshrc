@@ -64,6 +64,7 @@ alias ls='${LS_COMMAND} --color=auto --group-directories-first'
 alias ll='${LS_COMMAND} -l'
 alias la='${LS_COMMAND} -a'
 alias g="git"
+alias icat="kitten icat"
 
 function pacfzf() {
     pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
