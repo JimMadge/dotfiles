@@ -52,7 +52,6 @@ syntax enable "syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized
 set background=dark
-let g:solarized_visibility='low' "Make list characters less visible
 "let g:solarized_termcolors=256
 let g:solarized_termtrans=1 "allow transparency
 colorscheme solarized
